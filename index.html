@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Cálculo IMC</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=<1></1>">
+        <link rel="stylesheet" href="assets/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&effect=3d-float" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        <div class="card">
+            <div id="inner">
+                <div class="font-effect-3d-float">
+                <h2>Cálculo de IMC</h2><br>
+                </div>
+
+                <label for="altura">Altura</label>
+                <div class="insert">
+                    <input type ="text" id="altura" maxlength="4" placeholder="0">
+                    <div class="ui-label">cm</div>
+                </div>
+
+                <label for="peso">Peso</label>
+                <div class="insert">
+                    <input type ="text" id="peso" maxlength="5" placeholder="0">
+                    <div class="ui-label">kg</div>
+                </div>
+                
+                <label for="sexo">Sexo</label>
+                <select name="sexo" id="select">
+                    <option value="fem">Feminino</option>
+                    <option value="mas">Masculino</option>
+                </select>
+
+                <button onclick="calcularIMC()" value="Calcular">Calcular</button>
+                <button id="limpar" onclick="refresh()" value="Limpar">Limpar</button>
+            </div>
+            <div id="message"></div>
+        </div>
+
+    </body>
+    <script type="text/javascript" src="assets/script.js"></script>
+</html>
