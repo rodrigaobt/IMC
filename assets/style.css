@@ -9,8 +9,9 @@ body {
 
 }
 
-.card {
+.card-fluid {
     margin: 3em auto;
+    float: none;
     display: flex;
     flex-direction: column;
     width: 30em;
